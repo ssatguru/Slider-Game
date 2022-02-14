@@ -44,8 +44,9 @@ class Slider extends JPanel implements ActionListener, MetaEventListener{
 											BorderFactory.createBevelBorder(BevelBorder.RAISED)
 											));
 
-			java.net.URL imgURL = Slider.class.getResource("images/background.jpg");
+			java.net.URL imgURL = Slider.class.getResource("images/background.png");
 			GamePanel gamePanel = new GamePanel(imgURL);
+                        //JPanel gamePanel = new JPanel();
 			gamePanel.setLayout(new GridLayout(rows, cols,2,2));
 			gamePanel.setBackground(Color.DARK_GRAY);
 			gamePanel.setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
